@@ -1,4 +1,19 @@
-# HiMAE - ICLR 2026
+![python](https://img.shields.io/badge/-Python_3.12-blue?logo=python&logoColor=white)
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ulzee/raptor-private/pulls)
+[![license](https://img.shields.io/badge/License-BSD-blue.svg)](https://github.com/Simonlee711/HiMAE/blob/main/LICENSE)
+[![release](https://img.shields.io/badge/Release-v0.1.0-blue.svg)](https://github.com/Simonlee711/HiMAE/releases/tag/v0.1.0)
+
+# <center> 🔎 HiMAE: Hierarchical Masked Auto Encoders 🔍 </center>
+
+![raptor-banner](https://github.com/Simonlee711/HiMAE/blob/main/img/heatmap-himae.png?raw=true)
+
+**[ICLR 2026]** HiMAE: Hierarchical Masked Autoencoders Discover Resolution-Specific Structure in Wearable Time Series
+
+**Authors:** [Simon A. Lee](https://simon-a-lee.github.io), Cyrus Tanade, Hao Zhou, Juhyeon Lee, Megha Thukral, Minji Han, Rachel Choi, Md Sazzad Hissain Khan, Baiying Lu, Migyeong Gwak, Mehrab Bin Morshed, Viswam Nathan, Md Mahbubur Rahman, Li Zhu, Subramaniam Venkatraman, Sharanya Arcot Desai
+
+---
+
+# Brief Description
 
 Self-supervised masked autoencoding for physiological waveforms with HiMAE for PVC detection. This repository contains a PyTorch/Lightning implementation of a hierarchical 1‑D convolutional MAE (“HiMAE”), a minimal pretraining script, and a reproducible linear‑probe pipeline on 10‑second PPG segments.
 
@@ -97,8 +112,20 @@ The repository is intentionally modular. To adapt to new tasks, point the metada
 
 ## BibTeX
 
-If this code is useful in your work, please cite the repository. Replace the placeholders as needed.
+If this code is useful in your work, please cite the repository:
 
+`ICLR`
+```
+@inproceedings{lee2025himae,
+  title={HiMAE: Hierarchical Masked Autoencoders Discover Resolution-Specific Structure in Wearable Time Series},
+  author={Lee, Simon A and Tanade, Cyrus and Zhou, Hao and Lee, Juhyeon and Thukral, Megha and Khan, Md Sazzad Hissain and Lu, Baiying and Gwak, Migyeong and others},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=iPAy5VpGQa}
+}
+```
+
+`arxiv`
 ```
 @article{lee2025himae,
   title={HiMAE: Hierarchical Masked Autoencoders Discover Resolution-Specific Structure in Wearable Time Series},
@@ -110,4 +137,4 @@ If this code is useful in your work, please cite the repository. Replace the pla
 
 ## Acknowledgements
 
-Built with PyTorch, Lightning, and TorchMetrics. Optional logging uses Weights & Biases. Many implementation choices were guided by prior work on masked autoencoders adapted to 1‑D physiological signals.
+We thank Minji Han and Rachel Choi for their expertise in UX/UI design and for crafting the specialized visualizations not supported by standard Python libraries; their design contributions were essential to this work. We also thank Praveen Raja, Matthew Wiggins, and Mike Freedman for their invaluable feedback and insightful discussions throughout the project.
